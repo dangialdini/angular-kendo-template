@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E142F63-E330-4F51-A6B8-531A3F66CF7D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>angular_kendo_template</RootNamespace>
+    <AssemblyName>angular-kendo-template</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="vendor\styles\bootstrap-theme.css.map" />
+    <Content Include="vendor\styles\bootstrap-theme.min.css.map" />
+    <Content Include="vendor\styles\bootstrap.css.map" />
+    <Content Include="vendor\styles\bootstrap.min.css.map" />
+    <Content Include="vendor\styles\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="vendor\styles\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="vendor\styles\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="vendor\styles\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSans-Bold.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSans-BoldOblique.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSans-ExtraLight.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSans-Oblique.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSans.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSansMono-Bold.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSansMono-Oblique.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSansMono.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSerif-Bold.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSerif-Italic.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\DejaVuSerif.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\glyphs\KendoUIGlyphs.eot" />
+    <Content Include="vendor\styles\kendo\fonts\glyphs\KendoUIGlyphs.ttf" />
+    <Content Include="vendor\styles\kendo\fonts\glyphs\KendoUIGlyphs.woff" />
+    <Content Include="vendor\styles\kendo\images\kendoui.ttf" />
+    <Content Include="vendor\styles\kendo\images\kendoui.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\app.js" />
+    <Content Include="app\home\home.html" />
+    <Content Include="app\home\HomeController.js" />
+    <Content Include="app\layout\nav.html" />
+    <Content Include="app\scheduler\scheduler.html" />
+    <Content Include="app\scheduler\SchedulerController.js" />
+    <Content Include="app\site.css" />
+    <Content Include="index.html" />
+    <Content Include="vendor\scripts\kendo\angular.min.js" />
+    <Content Include="vendor\scripts\kendo\jquery.min.js" />
+    <Content Include="vendor\scripts\kendo\jquery.min.map.txt" />
+    <Content Include="vendor\scripts\kendo\kendo.all.min.js" />
+    <Content Include="vendor\scripts\kendo\kendo.all.min.js.map.txt" />
+    <Content Include="vendor\scripts\kendo\messages\kendo.messages.en-AU.min.js" />
+    <Content Include="vendor\scripts\kendo\messages\kendo.messages.en-AU.min.js.map.txt" />
+    <Content Include="vendor\scripts\kendo\messages\kendo.messages.en-CA.min.js" />
+    <Content Include="vendor\scripts\kendo\messages\kendo.messages.en-CA.min.js.map.txt" />
+    <Content Include="vendor\scripts\kendo\messages\kendo.messages.en-GB.min.js" />
+    <Content Include="vendor\scripts\kendo\messages\kendo.messages.en-GB.min.js.map.txt" />
+    <Content Include="vendor\scripts\kendo\messages\kendo.messages.en-US.min.js" />
+    <Content Include="vendor\scripts\kendo\messages\kendo.messages.en-US.min.js.map.txt" />
+    <Content Include="vendor\styles\bootstrap-theme.css" />
+    <Content Include="vendor\styles\bootstrap-theme.min.css" />
+    <Content Include="vendor\styles\bootstrap.css" />
+    <Content Include="vendor\styles\bootstrap.min.css" />
+    <Content Include="vendor\styles\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="vendor\styles\kendo\fonts\DejaVu\LICENSE.txt" />
+    <Content Include="vendor\styles\kendo\fonts\glyphs\KendoUIGlyphs.svg" />
+    <Content Include="vendor\styles\kendo\images\back.png" />
+    <Content Include="vendor\styles\kendo\images\kendoui.svg" />
+    <Content Include="vendor\styles\kendo\images\wp8_icons.png" />
+    <Content Include="vendor\styles\kendo\images\wp8_inverseicons.png" />
+    <Content Include="vendor\styles\kendo\kendo.common.min.css" />
+    <Content Include="vendor\styles\kendo\kendo.common.min.css.map.txt" />
+    <Content Include="vendor\styles\kendo\kendo.office365.min.css" />
+    <Content Include="vendor\styles\kendo\kendo.office365.min.css.map.txt" />
+    <Content Include="vendor\styles\kendo\Office365\editor.png" />
+    <Content Include="vendor\styles\kendo\Office365\imagebrowser.png" />
+    <Content Include="vendor\styles\kendo\Office365\indeterminate.gif" />
+    <Content Include="vendor\styles\kendo\Office365\loading-image.gif" />
+    <Content Include="vendor\styles\kendo\Office365\loading.gif" />
+    <Content Include="vendor\styles\kendo\Office365\loading_2x.gif" />
+    <Content Include="vendor\styles\kendo\Office365\markers.png" />
+    <Content Include="vendor\styles\kendo\Office365\markers_2x.png" />
+    <Content Include="vendor\styles\kendo\Office365\slider-h.gif" />
+    <Content Include="vendor\styles\kendo\Office365\slider-v.gif" />
+    <Content Include="vendor\styles\kendo\Office365\sprite.png" />
+    <Content Include="vendor\styles\kendo\Office365\sprite_2x.png" />
+    <Content Include="vendor\styles\kendo\Office365\sprite_kpi.png" />
+    <Content Include="vendor\styles\kendo\Office365\sprite_kpi_2x.png" />
+    <Content Include="vendor\styles\kendo\textures\brushed-metal.png" />
+    <Content Include="vendor\styles\kendo\textures\dots1.png" />
+    <Content Include="vendor\styles\kendo\textures\dots10.png" />
+    <Content Include="vendor\styles\kendo\textures\dots11.png" />
+    <Content Include="vendor\styles\kendo\textures\dots12.png" />
+    <Content Include="vendor\styles\kendo\textures\dots13.png" />
+    <Content Include="vendor\styles\kendo\textures\dots2.png" />
+    <Content Include="vendor\styles\kendo\textures\dots3.png" />
+    <Content Include="vendor\styles\kendo\textures\dots4.png" />
+    <Content Include="vendor\styles\kendo\textures\dots5.png" />
+    <Content Include="vendor\styles\kendo\textures\dots6.png" />
+    <Content Include="vendor\styles\kendo\textures\dots7.png" />
+    <Content Include="vendor\styles\kendo\textures\dots8.png" />
+    <Content Include="vendor\styles\kendo\textures\dots9.png" />
+    <Content Include="vendor\styles\kendo\textures\glass-lighter.png" />
+    <Content Include="vendor\styles\kendo\textures\glass.png" />
+    <Content Include="vendor\styles\kendo\textures\highlight.png" />
+    <Content Include="vendor\styles\kendo\textures\hsv-gradient.png" />
+    <Content Include="vendor\styles\kendo\textures\hue.png" />
+    <Content Include="vendor\styles\kendo\textures\leather1.png" />
+    <Content Include="vendor\styles\kendo\textures\leather2.png" />
+    <Content Include="vendor\styles\kendo\textures\noise.png" />
+    <Content Include="vendor\styles\kendo\textures\stripe1.png" />
+    <Content Include="vendor\styles\kendo\textures\stripe2.png" />
+    <Content Include="vendor\styles\kendo\textures\stripe3.png" />
+    <Content Include="vendor\styles\kendo\textures\stripe4.png" />
+    <Content Include="vendor\styles\kendo\textures\stripe5.png" />
+    <Content Include="vendor\styles\kendo\textures\stripe6.png" />
+    <Content Include="vendor\styles\kendo\textures\transparency.png" />
+    <Content Include="vendor\styles\kendo\textures\transtexture.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3983</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3983/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
