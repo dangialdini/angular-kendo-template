@@ -70,11 +70,8 @@
     <Content Include="app\images\kendo-ui-logo.jpg" />
     <Content Include="app\partials\banner.html" />
     <Content Include="packages.config" />
-    <Content Include="Scripts\angular-mocks.js" />
     <Content Include="vendor\scripts\angular-route.js" />
     <Content Include="vendor\scripts\angular-route.min.js" />
-    <Content Include="Scripts\angular.js" />
-    <Content Include="Scripts\angular.min.js" />
     <Content Include="vendor\styles\bootstrap-theme.css.map" />
     <Content Include="vendor\styles\bootstrap-theme.min.css.map" />
     <Content Include="vendor\styles\bootstrap.css.map" />
@@ -101,7 +98,6 @@
     <Content Include="vendor\styles\kendo\fonts\glyphs\KendoUIGlyphs.woff" />
     <Content Include="vendor\styles\kendo\images\kendoui.ttf" />
     <Content Include="vendor\styles\kendo\images\kendoui.woff" />
-    <Content Include="Scripts\angular.min.js.map" />
     <Content Include="vendor\scripts\angular-route.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
