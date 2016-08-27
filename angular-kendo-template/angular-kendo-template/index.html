@@ -9,20 +9,21 @@
     <link href="app/site.css" rel="stylesheet" />
 </head>
 <body ng-controller="HomeController">
-    <div class="navheader" ng-include="'app/layout/nav.html'"></div>
+    <banner></banner>
 
-    <div ng-view></div>
+    <ng-view></ng-view>
 
 
+    <!-- Vendor Scripts -->
     <script src="vendor/scripts/kendo/jquery.min.js"></script>
     <script src="vendor/scripts/kendo/angular.min.js"></script>
     <script src="vendor/scripts/angular-route.js"></script>
-
     <script src="vendor/scripts/kendo/kendo.all.min.js"></script>
     
+    <!-- App Scripts -->
     <script src="app/app.js"></script>
-    
-    <script src="app/scheduler/SchedulerController.js"></script>
     <script src="app/home/HomeController.js"></script>
+    <script src="app/kendo/KendoController.js"></script>
+    
 </body>
 </html>

@@ -1,7 +1,29 @@
 ﻿body {
 }
 
-.navheader {
+banner {
     height:50px;
+    display:block; 
+}
+
+.navbar-fixed-top {
     background-color:#e3f1fb;
+}
+
+heading {
+    font-size:28px;
+    line-height:100px;
+    font-style:oblique;
+}
+
+p {
+    font-weight:800;
+}
+
+.angular {
+        margin: 50px 0 100px 0;
+}
+
+.kendo {
+
 }

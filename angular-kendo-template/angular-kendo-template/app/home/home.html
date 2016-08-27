@@ -1,12 +1,20 @@
 ﻿<div class="text-center">
-    <div class="heading">
-        <h3>{{ homePage.heading }}</h3>
-    </div>
+
+    <heading>{{ homePage.heading }}</heading>
     
-    <div class="description">
+    
+    <div class="container description">
         <p>{{ homePage.description }}</p>
         <br />
-        <p>{{ homePage.descriptionAngular }}</p>
-        <p>{{ homePage.descriptionKendo }}</p>
+        <div class="angular">
+           
+            <img ng-src="/app/images/AngularJS-large.png" />
+            <p>{{ homePage.descriptionAngular }}</p>
+        </div>
+        <div class="kendo">
+            
+            <img ng-src="/app/images/kendo-ui-logo.jpg" />
+            <p>{{ homePage.descriptionKendo }}</p>
+        </div>
     </div>
 </div>

@@ -6,12 +6,19 @@
                     templateUrl: '/app/home/home.html',
                     controller: "HomeController"
                 })
-                .when('/scheduler', {
-                    templateUrl: '/app/scheduler/scheduler.html',
-                    controller: 'SchedulerController'
+                .when('/kendo', {
+                    templateUrl: '/app/kendo/kendo.html',
+                    controller: 'KendoController'
                 })
                 .otherwise({ redirectTo: '/' });
-        }]);
+        }])
+
+        .directive('banner', function () {
+            return {
+                restrict: 'E',
+                templateUrl: '/app/partials/banner.html'
+            }
+        })
 
 
 })();
